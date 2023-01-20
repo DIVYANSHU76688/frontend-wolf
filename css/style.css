@@ -1,69 +1,104 @@
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
 /* Header */
 
-.header{
-    text-align: center;
+.header {
+  text-align: center;
 }
 
-.logo-name{
-    font-size: 3.2rem;
-    font-family: "sans-serif";
-    font-weight: 900;
-    color: #333;
+.logo-name {
+  font-size: 3.2rem;
+  font-family: "sans-serif";
+  font-weight: 900;
+  color: #333;
 }
 
 /* content */
-.text{
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   gap: 1.2rem;
+.text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
-input{
-    width: 30rem;
-    height: 2.4rem;
-    border-radius: 0;
-    border: 2px solid #555;
+input {
+  width: 30rem;
+  height: 2.4rem;
+  border-radius: 0;
+  border: 2px solid #555;
 }
 
-.add-task{
-    padding: .6rem;
-    background-color: #333;
-    color: white;
-    font-size: 1.8rem;
-    
+/*********buttons***********/
+
+.add-task,
+.delete,
+.check {
+  padding: 0.6rem;
+  font-size: 1.8rem;
 }
 
-.add-task:hover{
-    background-color: #fff;
-    box-shadow: 0px 0px 0px 2px black inset; ;
-    color: #333;
+.add-task {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+.delete {
+  background-color: #F48484;
+  font-size: 1.8rem;
+  padding: 1rem;
+  cursor: pointer;
+} 
+.delete:hover{
+    background-color:#FF0032;
 }
 
-.task-list{
-    background-color: rgb(235, 235, 208);
-    margin-top: 4rem;
+.check {
+  background-color:#DAE2B6 ;
+  font-size: 1.8rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.check:hover{
+    background-color: #54B435;
 }
 
-.task-list-header{
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    
+/* ------------------------------- */
+.add-task:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px black inset;
+  color: #333;
 }
 
-.task .add-task{
-    font-size: 1rem;
+.task-list {
+  background-color: rgb(235, 235, 208);
+  margin-top: 4rem;
 }
 
+.task-list-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
 
-li{
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    text-align: center;
-    list-style: none;
+.task .add-task {
+  font-size: 1rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1.5rem;
+
+}
+
+li {
+  list-style: decimal;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
 }
