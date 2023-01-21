@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <main>
+    <main class="main">
       <section class="header">
         <h1 class="logo-name">TODO APP</h1>
       </section>
@@ -23,15 +23,17 @@
       <section class="content">
         <div class="text">
           <input class="input-text" type="text" />
-          <ion-icon class="add-task" name="add-outline" onclick=addTask()></ion-icon>
+          <ion-icon
+            class="add-task"
+            name="add-outline"
+            onclick="addTask()"
+          ></ion-icon>
         </div>
       </section>
-      <section>
+      <section class="section3">
         <div class="task-list">
-            <div class="task-list-header"> LIST OF TASKS</div>
-            <ul class = "task">
-
-            </ul>
+          <div class="task-list-header">LIST OF TASKS</div>
+          <ul class="task"></ul>
         </div>
       </section>
     </main>
@@ -46,3 +48,5 @@
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   ></script>
 </html>
+
+
